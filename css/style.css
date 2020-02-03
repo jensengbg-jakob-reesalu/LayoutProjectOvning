@@ -7,6 +7,7 @@ nav {
     top: 0;
     width: 100%;
     background-color: #e5e5e5;
+    z-index: 1;
 }
 
 ul {
@@ -45,13 +46,20 @@ ul a:hover {
     opacity: 1;
 }
 
-/* ------- MAIN ------- */
 p {
     font-family: "Fira sans";
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Frank Ruhl Libre";
+    margin: 0;
+    padding: 0;
 }
 
 .covered {
@@ -60,8 +68,20 @@ p {
     background-color: #C7DDEA;
 }
 
-.covered h1, p {
+.covered h1 {
     margin: 10px;
+}
+
+.covered p {
+    margin: 10px 30px;
+}
+
+.covered h1 {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: black;
 }
 
 .covered span {
@@ -71,9 +91,10 @@ p {
 .covered a {
     color: rgba(0, 0, 0, 0.8);
     background-color: white;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
     padding: 1rem;
-    width: 40%;
+    width: 30%;
     border-radius: 40px;
 
     text-decoration: none;
@@ -88,4 +109,156 @@ p {
     align-self: flex-end;
     margin-right: 10px;
     margin-top: -40px;
+}
+
+.learn {
+    text-align: center;
+    padding: 1rem;
+    background-color: #F17949;
+}
+
+.learn a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: 900;
+    line-height: 41px;
+    text-align: center;
+}
+
+.join {
+    text-align: center;
+    padding: 1rem;
+    background-color: #FAB131;
+}
+
+.join a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: 900;
+    line-height: 41px;
+    text-align: center;
+}
+
+/* ------- MAIN ------- */
+.card-section {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#A9A19E 50%, #FAB131 50%);
+}
+
+.gray {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #A9A19E;
+}
+
+.gray h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    margin: 10px;
+    color: #FFFFFF;
+}
+
+.gray a {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 40px;
+
+    text-decoration: none;
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+.gray p {
+    margin: 10px 30px;
+}
+
+/* CARDS */
+.cards {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards p {
+    margin: 0 25px 10px 25px;
+}
+
+.card-img {
+    position: relative;
+    top: -20px;
+    margin-bottom: -10px;
+    width: 90%;
+    height: 150px;
+    background-size: 39%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.card1, .card2, .card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 256px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+.card2 {
+    /* Separates all three cards */
+    
+}
+
+.card1 .card-img {
+    background-image: url(../img/child.png);
+    background-color: #C7DDEA;
+    background-position-y: 10px;
+}
+
+.card2 .card-img {
+    background-image: url(../img/adult.png);
+    background-color: #FAB131;
+    background-position-y: 20px;
+}
+
+
+.card3 .card-img {
+    background-image: url(../img/old.png);
+    background-color: #F17949;
+    background-position-y: 20px;
+}
+
+.yellow {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAB131;
+}
+
+.yellow h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    margin: 30px 10px 10px 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.yellow p {
+    margin: 10px 30px;
+}
+
+.yellow p:last-child {
+    margin-bottom: 30px;
 }
