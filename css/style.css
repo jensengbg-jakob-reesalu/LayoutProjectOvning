@@ -320,4 +320,29 @@ h1, h2, h3 {
 }
 
 /* ----- Footer ----- */
+footer {
+    background-color: #777574;
+    height: 200px;
+}
 
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #A9A19E;    
+}
+
+footer a {
+    width: 100%;
+    padding: 10px;
+    margin-top: -27px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
