@@ -237,6 +237,7 @@ h1, h2, h3 {
     background-image: url(../img/old.png);
     background-color: #F17949;
     background-position-y: 20px;
+    background-size: 60%;
 }
 
 .yellow {
